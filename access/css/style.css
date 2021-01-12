@@ -1,0 +1,370 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+.btn-black {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.btn-black:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* Clear float css  */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33333%; 
+}
+
+/* Header  */
+
+.header {
+    background-color: #000000;
+    height: 46px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header__nav {
+    display: inline-block;
+}
+
+.header__nav > li {
+    display: inline-block;
+}
+
+.header__nav > li i {
+    font-size: 12px;
+}
+
+.header__nav > li > a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+
+
+.header__nav > li:hover > a {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+.header__sub-nav {
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    display: none;
+    z-index: 1;
+}
+
+.header__nav > li:hover .header__sub-nav {
+    display: block;
+    cursor: pointer;
+}
+
+.header__sub-nav li{
+    padding: 8px 16px;
+    list-style-type: none;
+    border-bottom: 1px solid #dad2d2;
+}
+
+.header__sub-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.header__sub-nav li:hover {
+    background-color: #cccccc;
+}
+.mobi-menu,
+.header__search {
+    float: right;
+    color: #ffffff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.mobi-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mobi-menu:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.mobi-menu:hover i {
+    color: #000000;
+}
+
+.header__search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/* Slider  */
+
+.slider {
+    background: url('https://www.w3schools.com/w3images/chicago.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider__description {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 32px 16px;
+}
+
+.description__heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.description__sub-heading {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+/* Content  */
+
+.content-session {
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100%;
+}
+
+
+.session-heading {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.session-description {
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.about-text {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.member-item {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.member-name {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.member-img {
+    width: 70%;
+    border-radius: 4px;
+}
+
+/* Tuor Date  */
+.tuor-date {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.tuor__ticket {
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+.tuor__ticket li {
+    list-style-type: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tuor__ticket li p  {
+    font-size: 15px;
+   
+    color: #757575;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 3px 5px;
+    margin-left: 15px;
+}
+
+.quantity {
+    background-color: #000000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    line-height: 25px;
+    text-align: center;
+    float: right;
+    margin-top: -3px;
+}
+
+.tuor__place {
+    padding: 32px 0;
+}
+
+.tuor__img {
+    width: 100%;
+    display: block;
+}
+
+.place__content {
+    background-color: #fff;
+    color: #000000;
+    padding: 16px;
+ 
+}
+
+.place__heading {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.place__time {
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.7;
+}
+
+.place__description {
+    margin: 15px 0;
+}
+
+/* Contract  */
+.contract-info {
+    line-height: 1.6;
+}
+
+.contract-info i {
+    margin-right: 15px;
+}
+
+.response__input {
+    width: 100%;
+    border: 1px solid #cccccc ;
+    padding: 8px;
+    margin: 5px;
+}
+
+.response__btn {
+    float: right;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+.contract {
+    padding: 32px 0;
+}
+
+/* Address img  */
+.address-img {
+    background: url('https://www.w3schools.com/w3images/map.jpg') top center / cover no-repeat;
+    position: relative;
+    padding-top: 50%;
+}
+
+.footer {
+    padding: 64px 0;
+    text-align: center;
+}
+
+.footer__icon {
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+.footer__icon i:hover {
+    opacity: 0.6;
+}
+
+.footer__text {
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+.footer__text a {
+    color: #000000;
+}
+
+
+
+
+
+
