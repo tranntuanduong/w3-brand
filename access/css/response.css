@@ -10,12 +10,25 @@
 
 /* mobile  */
 @media (max-width: 739px) {
-    .header__search {
-        display: none;
+
+    .s-mt-20 {
+        margin-bottom: 20px !important;
     }
 
-    .mobi-menu {
-        display: block;
+    .s-mt-16 {
+        margin-top: 16px !important;
+    }
+
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-full-width {
+        width: 100% !important ;
+    }
+
+    .header__search {
+        display: none;
     }
 
     .header__nav {
@@ -31,14 +44,30 @@
     }
 
     .header__sub-nav {
-        width: 100%;
+        width: 100% !important;
     }
 
     .header__sub-nav li {
-        padding: 13px 40px;
+        padding: 13px 40px !important;
     }
     
     .header {
         overflow: hidden;
+    }
+
+    .mobi-menu {
+        display: block;
+    }
+
+    .about-text {
+        margin: 15px 0 24px !important; 
+    }
+
+    .contract-info {
+        margin-bottom: 16px !important;
+    }
+
+    .response__btn {
+       margin-right: 0;
     }
 }
