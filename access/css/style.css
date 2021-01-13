@@ -58,6 +58,11 @@ img:hover {
     width: 33.33333%; 
 }
 
+input[type=submit] {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
 /* Header  */
 
 .header {
@@ -329,6 +334,7 @@ img:hover {
     margin-right: 8px;
     margin-top: 5px;
     border: none;
+
 }
 
 .contract {
